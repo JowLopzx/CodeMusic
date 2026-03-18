@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WavePlay - Seu Player Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- INTRODUÇÃO -->
+    <header class="header">
+        <h1>🎧 WavePlay</h1>
+        <p>Seu player de música inteligente, moderno e imersivo</p>
+    </header>
+
+    <!-- DESTAQUES -->
+    <section class="genres">
+        <h2>Destaques</h2>
+        <div class="genre-container">
+            <div class="genre">🔥 Trap</div>
+            <div class="genre">🎸 Rock</div>
+            <div class="genre">🎤 Brega</div>
+            <div class="genre">🎧 Funk</div>
+            <div class="genre">🎹 Sertanejo</div>
+        </div>
+    </section>
+
+    <!-- PLAYER -->
+    <div class="player-container">
+        <div class="img-container">
+            <img src="https://via.placeholder.com/250" alt="Capa do Álbum" id="cover">
+        </div>
+
+        <div class="music-info">
+            <h2 id="title">Título da Música</h2>
+            <h3 id="artist">Nome do Artista</h3>
+        </div>
+
+        <audio id="audio"></audio>
+
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <div class="controls">
+            <button id="prev" class="action-btn">⏮</button>
+            <button id="play" class="action-btn action-btn-big">▶</button>
+            <button id="next" class="action-btn">⏭</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
