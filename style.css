@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #121212);
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    color: #aaa;
+}
+
+/* GENRES */
+.genres {
+    padding: 20px;
+    text-align: center;
+}
+
+.genre-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.genre {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.genre:hover {
+    background: #ff4d4d;
+    transform: scale(1.1);
+}
+
+/* PLAYER */
+.player-container {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.img-container img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+}
+
+/* TEXT */
+.music-info h2 {
+    margin: 15px 0 5px;
+}
+
+.music-info h3 {
+    margin: 0;
+    color: #bbb;
+}
+
+/* PROGRESS */
+.progress-container {
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    height: 6px;
+}
+
+.progress {
+    background: #ff4d4d;
+    height: 100%;
+    width: 0%;
+}
+
+/* BUTTONS */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-btn:hover {
+    transform: scale(1.2);
+}
+
+.action-btn-big {
+    font-size: 3rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .player-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .action-btn {
+        font-size: 1.5rem;
+    }
+
+    .action-btn-big {
+        font-size: 2.5rem;
+    }
+}
+
+.genre.active {
+    background: #ff4d4d;
+    transform: scale(1.1);
+}
